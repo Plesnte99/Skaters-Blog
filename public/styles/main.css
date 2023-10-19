@@ -1,0 +1,109 @@
+body {
+    background-color: black;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1400px;
+    height: auto;
+}
+
+video {
+    width: 100%;
+}
+
+ul{
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+    bottom: 30px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+ul li video{
+    transition: all 0.3s;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.events {
+    margin-bottom: 15px;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1400px;
+    height: auto;
+    color: white;
+}
+
+.col-4 > button {
+    width: 320px;
+    height: auto;
+    padding: 10px 30px;
+    margin: 5px;
+    float: right;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+}
+
+.table {align-items: center;}
+p, h6 {margin-bottom: 0;}
+.col-5 {padding: 0;}
+svg {margin: 0 5px 5px 0;}
+
+.col-2 > span {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.col > svg {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.social-header, .social-main {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    height: auto;
+    color: white;
+    grid-row-gap: 10px;
+}
+
+.col-2 > button {
+    width: 125px;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+    float: right;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.col-4 {
+    padding: 0;
+}

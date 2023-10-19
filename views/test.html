@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .grid-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            float: left;
+        }
+
+        ul {
+            padding-left: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        ul li video {
+            width: 200px;
+            transition: all0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="gallery-container" style="width: 1320px; height: 900px;">
+            <div class="grid-container">
+                <div class="row">
+                    <div class="col">
+                        <h4>Ad. Media Network</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <video src="../public/static/skate1.mp4" width="900px" height="500px" autoplay loop muted
+                            controls></video>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="search" placeholder="Search Video">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <ul>
+                            <li onclick="videoSlider('../public/static/skate1.mp4')">
+                                <video src="../public//static/skate1.mp4"></video>
+                            </li>
+                            <li onclick="videoSlider('../public/static/skate1.mp4')">
+                                <video src="../public//static/skate1.mp4"></video>
+                            </li>
+                            <li onclick="videoSlider('../public/static/skate1.mp4')">
+                                <video src="../public//static/skate1.mp4"></video>
+                            </li>
+                            <li onclick="videoSlider('../public/static/skate1.mp4')">
+                                <video src="../public//static/skate1.mp4"></video>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function videoSlider(links) {
+            document.querySelector(".slider").src = links;
+        }
+    </script>
+</body>
+
+</html>
